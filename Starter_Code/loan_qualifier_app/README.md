@@ -1,33 +1,31 @@
-# Project Title
+# Loan Qualifier Application
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
-
----
+--- This is an application that will allow the user to input credit score, monthly debt, monthly income, collateral value, and desired loan amount to check against a list of loans to find all qualifying loans. The `csv` file it will search against must be provided by the user. In future updates, it will then save the data to a csv in a file of the user's choice. 
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+--- This project uses python 3.7 with the following packages:
 
----
+* [fire](https://github.com/google/python-fire) - For the command line interface, help page, and entrypoint.
+
+* [questionary](https://github.com/tmbo/questionary) - For interactive user prompts and dialogs
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
-
----
+--- To install fire: `pip install fire`
+--- To install questionary: `pip install questionary`
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+--- Here is a screenshot of the application.
 
----
+![Loan Qualifier Prompts](https://github.com/snarfgod/challenge_2/blob/4f039368b9f4f69fb5ad7202636abeba529b0596/Screenshot%20(17).png)
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
-
----
+--- David Ports - dave.ports.1@gmail.com
+--- Ryan Walker - ryanwalker970@gmail.com
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+MIT

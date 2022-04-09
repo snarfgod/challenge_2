@@ -11,6 +11,9 @@ import fire
 import questionary
 from pathlib import Path
 import csv
+import os
+import shutil
+
 
 from qualifier.utils.fileio import load_csv, save_csv
 
@@ -121,6 +124,9 @@ def save_qualifying_loans(qualifying_loans):
         which_file = questionary.text("Where would you like to save the csv file? (input file location)").ask() 
         csvpath = Path("qualifying_loans.csv")
         save_csv(csvpath, qualifying_loans)
+        new_file_location = shutil.move(csvpath, which_file)
+    else:
+        print("You chose not to save file.")
    
 
 def run():
